@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Home - Art Circle Academy</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+	<![endif]-->
+	<script src='https://www.google.com/recaptcha/api.js'></script>form
+	<SCRIPT TYPE="text/javascript">
+
+//Disable right click script
+//visit http://www.rainbow.arch.scriptmania.com/scripts/
+var message="Sorry, right-click has been disabled";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+
+</SCRIPT> 
+    <style type="text/css">
+<!--
+body {   
+	 
+}
+.style57 {
+	font-size: 18px;
+	color: #000000;
+}
+.style59 {font-family: "Times New Roman", Times, serif; color: #000000; font-size: 18px; }
+.style63 {
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style65 {font-family: "Times New Roman", Times, serif}
+.style67 {font-size: 24px}
+.style68 {
+	color: #643200;
+	font-size: 24px;
+}
+.style76 {font-size: 12px}
+.style77 {color: #512800; font-size: 18px; }
+.style81 {
+	font-size: 18;
+	color: #000000;
+	font-family: "Times New Roman", Times, serif;
+}
+.style87 {font-family: Arial, Helvetica, sans-serif}
+.style86 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+}
+.style89 {font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12px; }
+.style90 {font-size: 14px}
+.style91 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style92 {font-size: 11px}
+.style93 {font-size: 18px}
+-->
+    </style>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+
+<link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/dropdown/dropdown.vertical.rtl.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/dropdown/themes/default/default.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function entervalues()
+		{
+
+ 
+ var name=document.getElementById("name").value;
+ var phone_no=document.getElementById("phone_no").value;
+ var email_id=document.getElementById("email_id").value;
+
+				if(name == "")
+					{
+					alert("Please enter the  name");
+					return false;
+					}				
+				if(phone_no== "")
+					{
+					alert("Please enter the phone number");
+					return false;
+					}
+					
+					
+					if(phone_no.match(/[^0-9]/))
+					{
+					alert("Phone number field must contain only numeric values");
+					return false;
+					}
+				 var len=phone_no.length;
+		
+					  
+				if(len > 12 || len < 8)
+					{
+					 alert("Phone No must be in range of 8-12 digits.");
+					 return false;
+			 		}
+	               			  
+				if(email_id=="")
+					{
+					alert("Please enter the Email id");
+					return false;
+					}
+		}
+						
+						
+								function validateemail(txt)
+			 {
+					var email = new String();
+					var atIndex,firstPart,secondPart;
+					var invalidChars = new String();
+					invalidChars="@~`!#$%^&*()+=|\{}[]:;\"'<,?/";
+					var i;
+					email =txt;
+					// checking '@'
+					atIndex = email.indexOf('@');
+					firstPart = email.substring(0,atIndex);
+					secondPart = email.substring(atIndex+1,email.length);
+					// checking number of dots
+					var count=0;
+					dotIndex=secondPart.indexOf(".");
+					for(i=0;i<secondPart.length;i++)
+					{
+					if(secondPart.charAt(i)==".")
+					count++;
+					}
+					if(count>2 || count==0)
+					return false;
+					// checking for invalid chars
+					for(i=0;i<firstPart.length;i++)
+					if(invalidChars.indexOf(firstPart.charAt(i))!=-1)
+					return false;
+					for(i=0;i<secondPart.length;i++)
+					if(invalidChars.indexOf(secondPart.charAt(i))!=-1)
+					return false;
+					// remove leading spaces
+					while(firstPart.charAt(0)==' ')
+					firstPart = firstPart.substring(1,firstPart.length);
+					// remove trailing spaces
+					while(secondPart.charAt(secondPart.length-1)==' ')
+					secondPart = secondPart.substring(0,(secondPart.length-2));
+					tempString=secondPart;
+					// checking for consecutive dots
+					dotIndex=secondPart.indexOf(".");
+					if(dotIndex==0||dotIndex==secondPart.length-1)
+					return false;
+					else
+			      {
+					tempString=secondPart.substring(dotIndex+1,secondPart.length)
+					dotIndex=tempString.indexOf(".");
+					if(dotIndex==0||dotIndex==tempString.length-1)
+					return false;
+                  }
+					if( (atIndex==-1) || (firstPart.indexOf(' ')!=-1) || (secondPart.indexOf(' ')!=-1))
+					return false;
+					else
+                  {
+                    return true;
+                  }
+			 }
+</script>
+
+<body>
+
+<table width="1307" height="228" border="0"  >
+<tr>
+  <td width="280" height="224">&nbsp;</td>
+</tr>
+</table>
+<div>
+<div>
+
+    <table width="1122" height="1111" border="0" cellspacing="2" cellpadding="2">
+    <tr>
+      <td width="228" height="1006"></td>
+      <td width="880">
+      
+        <!-- <form data-toggle="validator" method="post" action="thankyou.php" class="aSubmit" novalidate id="dataform" onsubmit="return checkform(this);">-->
+      
+      <form data-toggle="validator" method="post" action="enquiryc.php" class="aSubmit" novalidate id="dataform" onsubmit="return checkform(this);">
+	<!-- <form name="enquiry" action="thankyou.php" method="get" enctype="text/plain" onSubmit="javascript:return entervalues(); return checkform(this);">-->
+        <table width="0" height="00" cellspacing="2" cellpadding="2" border="0" bgcolor="#E6DEA0">
+	
+		<tr><td colspan="2"><table border="0" cellspacing="1"  cellpadding="1">
+  <tr>
+    
+    <td ><a href="index.html" class="current"><img  src="images/home222.jpg"   /></a></td>
+    <td><a href="about us.html"><img  src="images/aboutus222.jpg"   /></a></td>
+    <td><a href="whyus.html"><img  src="images/why us 2222.jpg"  /></a></td>
+    <td><a href="gallery.html"><img  src="images/gallery222222.jpg"/></a></td>
+   <td><a href="event.html"><img  src="images/events222.jpg" /></a></td>
+    <td><a href="http://finggu.com/art/"  target="_blank"><img  src="images/exibition222222.jpg" /></a></td>
+    <td><a href="staff.html"><img  src="images/faculty222.jpg"  /></a></td>
+    <td><a href="faq.html"><img  src="images/faq222.jpg"  /></a></td>
+    <td><a href="Contactus.html"><img  src="images/contact us22222.jpg"  /></a></td>
+  </tr>
+</table></td></tr>
+		  <tr><td colspan="2" height="31">
+		    <p class="style76 style93 style57 style67 style68"  style="background-image:url(images/layout_777kkk.jpg)"> <strong> &nbsp;<span class="style77">Contact Us </span> </strong></p>
+		    </td>
+		  </tr>
+		
+	 <tr><td colspan="2"><div align="right">
+	   <p align="right"><strong><span class="style87"><span class="style76"><span class="style84 "><a href="Admissionform.html" class="style65">Click here to download Admission form</a></span></span></span></strong> </p>
+	   <p align="right"><span class="style86">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="registerform.html" class="style65">Click here for online registration</a></span></p>
+	   <p>&nbsp;</p>
+	   </div></td>
+          </tr>
+		  <tr>
+            <td height="295" colspan="2"><p class="style114">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style65"><span class="style89">For more details contact us:-</span></p>
+              <p class="style110 style59 style63 style76"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sir Umesh Patil&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 9833158670</p>
+              <p class="style110 style59 style63 style76">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sir Pravin Gunjkar&nbsp;: 9221204363</p>
+		      <p class="style110 style59 style63 style76"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email Id&nbsp;&nbsp;:&nbsp;&nbsp; artcircleacademy@gmail.com </p>
+		  <img src="images/callingkid.JPG" width="888" height="375"/></td>
+          
+            
+          </tr>
+		  <tr>
+		    <td width="386" height="41" >
+             <span class="style110">
+             <div align="center" class="style81"><span class="style110 style87 style90">Name</span><span class="style112 style90 style87">*</span><span class="style110">             </div>
+             </label></td>
+          <td width="501"><input  type="text" name="first_name" id="name" maxlength="50" size="32">		   </td>
+		  </tr>
+		  <tr>
+         <td width="386" height="40" >
+             <span class="style110">             <label for="phone_no">
+             <div align="center" class="style59"><span class="style110 style90 style87">Contact No</span><span class="style112 style90 style87">*</span><span class="style110">               </div>
+            </label>           </td>
+          <td width="501"><input  type="tel" name="phone_no" id="phone_no" maxlength="50" size="32">		  </td>
+		  </tr>
+		  <tr>
+         <td width="386" height="38" >             <label for="Email_id">
+             <div align="center" class="style59"><span class="style110  style91">Email</span><span class="style91"> ID</span><span class="style63">*</span> </div>
+             </label>           </td>
+          <td width="501"><input  type="email" name="email_id"  id="email_id" maxlength="100" size="32">		  </td>
+		  </tr>
+		  
+		  <tr>
+         <td width="386" height="64" >
+             <span class="style110">             <label for="Address">
+             <div align="center"><span class="style110 style57 style87 style76">Address</span><span class="style110">               </div>
+            </label>           </td>
+          <td width="501"><textarea name="addr" rows="2" cols="20" id="ctl00_ContentPlaceHolder1_TxtAddress" style="height: 50px; width: 220px; 	                 margin: 0px;"></textarea>		  </td>
+		  </tr>
+		  <tr>
+            <td width="386" height="113" >
+                <span class="style110">                <label for="feedback">
+                <div align="center"><span class="style110 style57 style87 style76">Your Comments</span><span class="style110">                  </div>
+            </label>              </td>
+            <td width="501"><textarea  name="feedback" maxlength="1000" cols="25" rows="6" style="height: 100px; width: 220px;"></textarea></td>
+	      </tr>
+		  <tr>
+         <td height="104" > <div align="justify"></div></td>
+          <td width="501" ><p>
+
+
+<!-- START CAPTCHA -->
+<br>
+<div class="capbox">
+
+<div id="CaptchaDiv"></div>
+
+<div class="capbox-inner">
+I am not robot:<br>
+
+<!--<input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>-->
+
+</div>
+</div>
+<br><br>
+<!-- END CAPTCHA -->
+
+
+
+
+
+
+<div class="g-recaptcha" data-sitekey="6Leoh0wUAAAAAOwmPorPCVVi7FCA3s2zEsAVno0I"></div>
+
+
+              <div align="left">
+                <input type="submit" value="Submit" >
+                &nbsp; 
+                  <input type="reset" value="Reset" > 
+                </div>
+          </form>
+		  
+          <script type="text/javascript">
+
+// Captcha Script
+
+function checkform(theform){
+var why = "";
+
+if(theform.CaptchaInput.value == ""){
+why += "- Please Enter CAPTCHA Code.\n";
+}
+if(theform.CaptchaInput.value != ""){
+if(ValidCaptcha(theform.CaptchaInput.value) == false){
+why += "- The CAPTCHA Code Does Not Match.\n";
+}
+}
+if(why != ""){
+alert(why);
+return false;
+}
+}
+
+var a = Math.ceil(Math.random() * 9)+ '';
+var b = Math.ceil(Math.random() * 9)+ '';
+var c = Math.ceil(Math.random() * 9)+ '';
+var d = Math.ceil(Math.random() * 9)+ '';
+var e = Math.ceil(Math.random() * 9)+ '';
+
+var code = a + b + c + d + e;
+document.getElementById("txtCaptcha").value = code;
+document.getElementById("CaptchaDiv").innerHTML = code;
+
+// Validate input against the generated number
+function ValidCaptcha(){
+var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+if (str1 == str2){
+return true;
+}else{
+return false;
+}
+}
+
+// Remove the spaces from the entered and generated code
+function removeSpaces(string){
+return string.split(' ').join('');
+}
+</script>
+
+          
+          
+          
+          
+          
+</p>
+           </td>
+		  </tr>
+		  
+		  
+		 
+		  
+				<tr>
+				  <td height="42" colspan="2"><div align="center"><a href="http://www.finggu.com/" target="_blank" class="style63 link2 style87 style92" style="text-decoration:none">Designed & Hosted By :- Finggu Infotech</a></div>
+				  <div align="right">
+				  <a href="http://facebook.com/artcircleacademy" target="_blank" class="facebook"><img src="images/fb.JPG" width="30" height="25"/></a></div></td>
+				</tr>
+				
+        </table>
+		
+             
+  </table> 
+		 
+     </td>
+    </tr>
+    
+    
+
+</div>
+
+		
+</body>
+</html>
+
+
+
+
+
+
+
+        

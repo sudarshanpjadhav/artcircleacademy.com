@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Home - Art Circle Academy</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+	<![endif]-->
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<SCRIPT TYPE="text/javascript">
+
+//Disable right click script
+//visit http://www.rainbow.arch.scriptmania.com/scripts/
+var message="Sorry, right-click has been disabled";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers)
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+document.oncontextmenu=new Function("return false")
+
+</SCRIPT> 
+	
+    <style type="text/css">
+<!--
+
+
+
+
+
+
+
+.capbox {
+	background-color: #92D433;
+	border: #B3E272 0px solid;
+	border-width: 0px 12px 0px 0px;
+	display: inline-block;
+	*display: inline; zoom: 1; /* FOR IE7-8 */
+	padding: 8px 40px 8px 8px;
+	}
+
+.capbox-inner {
+	font: bold 11px arial, sans-serif;
+	color: #000000;
+	background-color: #DBF3BA;
+	margin: 5px auto 0px auto;
+	padding: 3px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaDiv {
+	font: bold 17px verdana, arial, sans-serif;
+	font-style: italic;
+	color: #000000;
+	background-color: #FFFFFF;
+	padding: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+#CaptchaInput { margin: 1px 0px 1px 0px; width: 135px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {   
+	 
+}
+.style57 {
+	font-size: 18px;
+	color: #000000;
+}
+.style63 {
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style67 {font-size: 24px}
+.style68 {
+	color: #643200;
+	font-size: 24px;
+}
+.style76 {font-size: 12px}
+.style77 {color: #512800; font-size: 18px; }
+.style97 {color: #000000}
+.style98 {font-size: 12}
+.style99 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.style100 {font-size: 14px}
+.style101 {font-family: Arial, Helvetica, sans-serif}
+.style102 {font-size: 18px}
+.style103 {color: #000000; font-weight: bold; }
+.style105 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; color: #000000;}
+.style88 {color: #000000;
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+}
+-->
+    </style>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+
+<link href="css/dropdown/dropdown.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/dropdown/dropdown.vertical.rtl.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="css/dropdown/themes/default/default.css" media="screen" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function entervalues()
+		{
+
+ 
+ var name=document.getElementById("name").value;
+  var age=document.getElementById("age").value;
+   var dob=document.getElementById("dob").value;
+    var std=document.getElementById("std").value;
+	var first_name5=document.getElementById("first_name5").value;
+ var phone_no=document.getElementById("first_name7").value;
+ var email_id=document.getElementById("first_name8").value;
+ var address=document.getElementById("feedback").value;
+ var sex=document.getElementById("sex").value;
+
+
+				if(name == "")
+					{
+					alert("Please enter the  name");
+					return false;
+					}	
+					
+					if(age == "")
+					{
+					alert("Please enter the  age");
+					return false;
+					}	
+					
+					if(dob == "")
+					{
+					alert("Please enter the  Date Of Birth");
+					return false;
+					}	
+					
+					if(std == "")
+					{
+					alert("Please enter the  standard");
+					return false;
+					}	
+					
+					if(first_name5 == "")
+					{
+					alert("Please enter Father's/Mother's Name");
+					return false;
+					}				
+				if(phone_no== "")
+					{
+					alert("Please enter the phone number");
+					return false;
+					}
+					
+					
+					if(phone_no.match(/[^0-9]/))
+					{
+					alert("Phone number field must contain only numeric values");
+					return false;
+					}
+				 var len=phone_no.length;
+		
+					  
+				if(len > 12 || len < 8)
+					{
+					 alert("Phone No must be in range of 8-12 digits.");
+					 return false;
+			 		}
+	               			  
+				if(email_id=="")
+					{
+					alert("Please enter the Email id");
+					return false;
+					}
+					
+					if(address=="")
+					{
+					alert("Please enter your Residential Address");
+					return false;
+					}
+					
+					if(sex=="")
+					{
+					alert("Please enter sex");
+					return false;
+					}
+                                      
+					
+		}
+						
+						
+								function validateemail(txt)
+			 {
+					var email = new String();
+					var atIndex,firstPart,secondPart;
+					var invalidChars = new String();
+					invalidChars="@~`!#$%^&*()+=|\{}[]:;\"'<,?/";
+					var i;
+					email =txt;
+					// checking '@'
+					atIndex = email.indexOf('@');
+					firstPart = email.substring(0,atIndex);
+					secondPart = email.substring(atIndex+1,email.length);
+					// checking number of dots
+					var count=0;
+					dotIndex=secondPart.indexOf(".");
+					for(i=0;i<secondPart.length;i++)
+					{
+					if(secondPart.charAt(i)==".")
+					count++;
+					}
+					if(count>2 || count==0)
+					return false;
+					// checking for invalid chars
+					for(i=0;i<firstPart.length;i++)
+					if(invalidChars.indexOf(firstPart.charAt(i))!=-1)
+					return false;
+					for(i=0;i<secondPart.length;i++)
+					if(invalidChars.indexOf(secondPart.charAt(i))!=-1)
+					return false;
+					// remove leading spaces
+					while(firstPart.charAt(0)==' ')
+					firstPart = firstPart.substring(1,firstPart.length);
+					// remove trailing spaces
+					while(secondPart.charAt(secondPart.length-1)==' ')
+					secondPart = secondPart.substring(0,(secondPart.length-2));
+					tempString=secondPart;
+					// checking for consecutive dots
+					dotIndex=secondPart.indexOf(".");
+					if(dotIndex==0||dotIndex==secondPart.length-1)
+					return false;
+					else
+			      {
+					tempString=secondPart.substring(dotIndex+1,secondPart.length)
+					dotIndex=tempString.indexOf(".");
+					if(dotIndex==0||dotIndex==tempString.length-1)
+					return false;
+                  }
+					if( (atIndex==-1) || (firstPart.indexOf(' ')!=-1) || (secondPart.indexOf(' ')!=-1))
+					return false;
+					else
+                  {
+                    return true;
+                  }
+			 }
+</script>
+
+
+	
+<body>
+
+<table width="1307" height="228" border="0"  >
+	<tr>
+  		<td width="280" height="224">&nbsp;</td>
+	</tr>
+</table>
+	
+<div>
+
+  <table width="1122" height="1111" border="0" cellspacing="2" cellpadding="2">
+   
+ <tr>
+      <td width="228" height="1006"></td>
+    <td width="880">
+	 <form action="enquiry.php" method="post" name="dataform"  id="dataform" 
+    onsubmit="return checkform(this);">
+        <table width="0" height="00" cellspacing="2" cellpadding="2" border="0" bgcolor="#E6DEA0">
+		<tr>
+			<td colspan="2">
+			<table border="0" cellspacing="1"  cellpadding="1">
+  		<tr>
+            <td ><a href="index.html" class="current"><img  src="images/home222.jpg"   /></a></td>
+   			 <td><a href="about us.html"><img  src="images/aboutus222.jpg"   /></a></td>
+    		<td><a href="whyus.html"><img  src="images/why us 2222.jpg"  /></a></td>
+   			 <td><a href="gallery.html"><img  src="images/gallery222222.jpg"/></a></td>
+   			<td><a href="event.html"><img  src="images/events222.jpg" /></a></td>
+   			 <td><a href="http://finggu.com/art/"  target="_blank"><img  src="images/exibition222222.jpg" /></a></td>
+   			 <td><a href="staff.html"><img  src="images/faculty222.jpg"  /></a></td>
+   			 <td><a href="faq.html"><img  src="images/faq222.jpg"  /></a></td>
+  		  	<td><a href="Contactus.html"><img  src="images/contact us22222.jpg"  /></a></td>
+ 		 </tr>
+          </table>	</td>
+</tr>
+<tr>
+		<td colspan="2" height="31">
+		    <p class="style76 style93 style57 style67 style68"  style="background-image:url(images/layout_777kkk.jpg)"> <strong> &nbsp;	<span class="style77">Registration Form</span></strong></p>		    </td>
+</tr>
+		<tr>
+		  <td><div><table width="537" align="center">
+		    <tr><td width="145"><img src="images/artcirclelogo.JPG" alt="a" width="126" height="123"></td>
+		    <td width="380"><p class="style97 style102"><strong>ART CIRCLE &quot;drawing &amp; Painting classes&quot;</strong></p>
+		      <p align="center" class="style97">Registration Form for Admission&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		      <p align="left" class="style97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;( All  Entries to be filled in CAPITAL letters )</p>
+		      <p align="left" class="style97">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Govt.  Registered</p></td>
+		  </tr>	
+		  	  
+		  </table>
+		  </div></td>
+		</tr>
+	 <tr><td><table align="center" border="0"><td width="172" height="39" ><div align="justify" class="style90">
+               <div align="justify" class="style116 style79 style114 style115 style97 style100">Name of the candidate :* </div>
+             </div>
+         </br></br>  
+		 <div align="justify" class="style90">
+             <div align="justify" class="style116 style79 style114 style115 style97 style100">Age :*</div>
+           </div>          </td>
+         <td width="270">
+         <input  type="text" name="first_name" id="first_name" maxlength="50" size="40"> </br></br>	
+         <input  type="text" name="age" id="age" maxlength="50" size="15">	   </td>
+		 
+		<td width="77" height="32" >       
+          
+           <div align="justify" class="style90">
+             <div align="justify" class="style112">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+           </div></td>
+		   <td width="244" valign="top" align="center"><div align="right"><strong><a href="http://www.artcircleacademy.com/Admission_form.doc" class="style92 style76 style111">Download Admission form</a></strong></div></td>
+		   </table></td></tr>
+		     <td><table align="center">
+             <tr>
+               <td width="172" height="32" ><div align="justify" class="style90">
+                   <label for="phone_no"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style57 style114 style115 style100"><span class="style110 ">Date Of Birth :</span><span class="style110">* </span></div>
+                 </div>
+                 <span class="style110"> </span></div></td>
+               <td width="312" class="style110"><input  type="text" name="dob" id="dob" maxlength="50" size="25"></td>
+               <td width="35" height="32" ><div align="justify" class="style90">
+                   <label for="Email_id"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style112">&nbsp;<span class="style100">&nbsp;<span class="style116 style83 style97">&nbsp;<span class="style101">Sex</span>:</span></span><span class="style85 style97 style100">*</span></div>
+                 </div>
+               </div></td>
+               <td width="251"><input type="radio" name="sex"  id="sex" value="male">
+                   <span class="style84 style85 style115"><span class="style114 style84 style97 style100">Male</span></span> &nbsp;&nbsp;
+                   <input type="radio" name="sex" id="sex" value="female">
+                   <span class="style84 style85 style115"><span class="style114 style84 style97 style100">Female</span></span> </td>
+             </tr>
+             <tr>
+               <td width="172" height="32" ><div align="justify" class="style90">
+                   <label for="Email_id"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style79 style114 style115 style97 style100">Standard :*</div>
+                 </div>
+               </div></td>
+               <td width="312"><input  type="text" name="std" id="std" maxlength="50" size="40"></td>
+             </tr>
+             
+             
+              <tr>
+               <td width="172" height="32" ><div align="justify" class="style90">
+                   <label for="Email_id"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style79 style114 style115 style97 style100">Teacher Name :*</div>
+                 </div>
+               </div></td>
+               <td width="312">
+               <select name="teachername" id="teachername">
+  <option value="Select Teacher">Select Teacher</option>
+  <option value="PravinGunjkar">Pravin Gunjkar</option>
+  <option value="UmeshPatil">Umesh Patil</option>
+  <option value="ManojAkre">Manoj Akre</option>
+  <option value="SatendraMhatre">Satendra Mhatre</option>
+  <option value="MarutiPatil">Maruti Patil</option>
+  <option value="NarendraTandel">Narendra Tandel</option>
+  <option value="SandeepBobade">Sandeep Bobade</option>
+  <option value="DineshTingne">Dinesh Tingne</option>
+  <option value="BhushanAglawe">Bhushan Aglawe</option>
+  <option value="Non of Above">Non of Above</option>
+  
+</select>
+               
+               
+               </td>
+             </tr>
+                 <tr>
+               <td width="172" height="32" ><div align="justify" class="style90">
+                   <label for="Email_id"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style79 style114 style115 style97 style100">Teache Name :<br>
+                    <span style="color:red;"> (If you not find your teacher name in the list please mention here)</span>
+                     </div>
+                 </div>
+               </div></td>
+               <td width="312"><input  type="text" name="textteachername" id="textteachername" maxlength="50" size="40"></td>
+             </tr>
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             <tr>
+               <td width="172" height="51" ><div align="justify" class="style90">
+                   <label for="Address"> </label>
+                 <div align="justify" class="style90">
+                     <div align="left" class="style117 style97 style98"><span class="style112 ">Name of the School / College </span><span class="style116"> : </span> </div>
+                 </div>
+               </div></td>
+               <td width="312"><input  type="text" name="Name_of_the_SchoolCollege" id="Name_of_the_SchoolCollege" maxlength="50"   size="40"></td>
+             </tr>
+             <tr>
+               <td width="172" height="33" ><div align="justify" class="style90">
+                   <label for="feedback"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style79 style114 style115 style76"><span class="style110 style97 style100">Father's/Mother's   Name :* </span></div>
+                 </div>
+                 <span class="style110"></span><span class="style110"></span></div></td>
+               <td width="312"><input  type="text" name="Father_Mother_Name" id="Father_Mother_Name" maxlength="50" size="40"></td>
+             </tr>
+             <tr>
+               <td width="172" height="35" ><div align="justify" class="style90">
+                   <label for="feedback"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style85 style114 style115 style76"><span class="style110 style97 style100">Occupation :</span></div>
+                 </div>
+                 <span class="style110 style98"> </span></div></td>
+               <td width="312" class="style98"><input  type="text" name="Occupation" id="Occupation" maxlength="50" size="40"></td>
+             </tr>
+             <tr>
+               <td width="172" height="32" class="style98" ><div align="justify" class="style90">
+                   <label for="feedback"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style85 style114 style115"><span class="style110 style97 style100">Contact No. :*</span></div>
+                 </div>
+                 <span class="style110"> </span></div></td>
+               <td width="312" class="style98"><input  type="text" name="Contact_No" maxlength="50" id="Contact_No" size="40"></td>
+             </tr>
+             <tr>
+               <td width="172" height="33" class="style98" ><div align="justify" class="style90">
+                   <label for="feedback"> </label>
+                 <div align="justify" class="style90">
+                     <div align="justify" class="style116 style85 style114 style115"><span class="style110 style97 style100">Email Id :* </span></div>
+                 </div>
+                 <span class="style110"> </span></div></td>
+               <td width="312" class="style98"><input  type="email" name="email" maxlength="50" id="email" size="40"></td>
+             </tr>
+             
+             
+             
+             
+             
+             
+             
+             
+             
+             <tr>
+               <td width="172" height="110" class="style98" ><div align="justify" class="style90">
+                   <label for="feedback"> </label>
+                 <div align="justify" class="style108">
+                     <div align="justify" class="style116 style85 style114 style115"><span class="style110 style97 style100">Residential Address :* </span></div>
+                 </div>
+                 <span class="style110"> </span></div></td>
+               <td width="312" class="style98"><p>
+                   <textarea  name="feedback" maxlength="1000" cols="25" rows="6" id="feedback" style="height: 100px; width: 270px;"></textarea>
+               </p></td>
+             </tr>
+             
+             <tr>
+               <td height="110" class="style98" >I am not robot:</td>
+               <td class="style98">        
+           <!-- START CAPTCHA -->
+<br>
+<div class="capbox">
+
+
+
+<div >
+
+<div class="g-recaptcha" data-sitekey="6Leoh0wUAAAAAOwmPorPCVVi7FCA3s2zEsAVno0I"></div>
+ <!-- <input type="hidden" id="txtCaptcha">
+<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+-->
+</div>
+</div>
+<br><br>
+<!-- END CAPTCHA --></td>
+             </tr>
+           </table></td>
+           
+           
+          
+          
+           
+           
+         
+
+           
+           
+           
+           
+           
+           
+           
+           
+       
+           
+		 <tr align="center"><td><p><input type="submit" value="Submit" >
+		    &nbsp;&nbsp;
+		         <input name="reset" type="reset" value="Reset" >
+		  </p></form></td></tr>
+		  <tr><td><p align="center" class="style103" style="text-decoration:underline">Rules and Regulations</p></td></tr>
+		  <tr><td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		    <p align="left" class="style88"><span class="style99">  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;i) Art Circle take fees according to their terms, each term having 20 turns, having fees 12,000/-</span></p>
+		    <p align="left" class="style105">                    &nbsp;  ii) It is compulsory to pay whole fees in the starting of the term.</p>
+		    <p align="left" class="style99">           &nbsp;&nbsp;         <span class="style97">iii) Maximum 3 students are required in a batch. If any student wants to take an admission in same batch then that student have to pay 5000/- extra &nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;  &nbsp; &nbsp;&nbsp;   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;</span><span class="style97"> rather than fees.</span></p>
+		    <p align="justify" class="style99">           &nbsp; &nbsp;       <span class="style97">iv) If class missed by student then teacher will not be responsible for that and according to academy’srules that  student will get only&nbsp;2&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;  &nbsp;&nbsp;    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;   &nbsp; &nbsp; &nbsp; &nbsp;   cover-up and it will not going to calculate in next  term.</span></p>
+		    <p align="justify" class="style105">               &nbsp;       v) If any student is absent in a class then that student will not get special class.</p>
+		    <p align="justify" class="style105">               &nbsp;       vi) After paying fees it will not get return for any kind of reason and it will not be transferable.</p>
+		    <p align="justify" class="style105">               &nbsp;       vii) Art kit is available.</p></td></tr>
+		  <tr><td><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></td></tr>
+		  
+<tr>
+	<td height="42" colspan="2" class="style98">
+					<div align="center"><a href="http://www.finggu.com/" target="_blank" class="style63 style92 link2  style99" style="text-decoration:none">Designed & Hosted By :- Finggu Infotech</a></div>
+				  <div align="right"> <a href="http://facebook.com/artcircleacademy" target="_blank" class="facebook"><img src="images/fb.JPG" width="30"	height="25"/></a>				  </div>	</td>
+</tr>
+</table>
+  </table> 
+		 
+     
+  <span class="style98">
+  </tr>
+  </span></div></body><body><div></table> 
+		 
+     
+  <span class="style98">
+  </tr>
+  </span></div>
+<span class="style98">
+		<!--<div id="content" style="background-color:#FFFFFF">
+  <div  style="background-color:#FFFFFF" > <a href="index.html"><img src="images/cont1.JPG" alt="Logo" width="960" height="451" /></a>
+      <p align="center" class="style25"><span class="style2">Why</span> A<span class="style3">R</span><span class="style11">T</span> <span class="style2">EDUCATION??</span></p>
+    <table width="962" border="0"  cellspacing="2" cellpadding="5">
+        <tr>
+          <td ><a href="index.html"><img src="images/ind1.JPG"   align="right" alt="Logo" width="543" height="313" /></a></td>
+          <td><p align="justify" class="style27">Art education is the area of learning that is basedupon the visual, tangible arts—drawing, painting, sculpture, and  design in jewelry, pottery, weaving, fabrics etc. and design applied to more practical fields such as commercial graphics and home furnishings. The arts cultivate the senses that trust the unmediated flash of insight as a legitimate source of knowledge.The arts connect person and experiencedirectly, building bridges between verbal and nonverbal, logic and emotion--the better to gain an understanding of the whole. <span class="style27">Children naturally love art – painting, drawing, making music,the theater. </p>
+          </td>
+        </tr>
+    </table>
+    <p align="center" class="style25"><span class="style2">Benefits of exposing Children to</span> A<span class="style3">R</span><span class="style11">T</span></p>
+    <table width="962" border="0"  cellspacing="2" cellpadding="5">
+      <tr>
+        
+        <td><p class="style27" align="justify">Kids express things through their art that  they don't even have words for yet<em><strong>.</strong></em>Kid learns to think creatively, with an open mind.Learns to observe and describe, analyze and interpret.Color not only affects our moods, it can also promote learning and creativity.Learns to express feelings, with or without words.Practices problem-solving skills, critical-thinking skills, dance, music, theater                 and art-making skills, language and vocabulary of the arts.Discovers that there is more than one right answer, multiple points of view.School can be fun – playing can be learning.Learns to collaborate with other children and with adults.</p>
+        </td><td height="336" ><a href="index.html"><img src="images/adult.jpg"   align="left" alt="Logo" width="543" height="313" /></a></td>
+      </tr>
+    </table>
+	<p align="center" class="style29"><span class="style2"></span><span class="style25">A<span class="style3">R</span><span class="style11">T</span></span> encourages creative minds
+	<table width="962" border="0"  cellspacing="2" cellpadding="5">
+      <tr>
+        <td width="529" height="388" ><a href="index.html"><span class="style18"><img src="images/img.JPG"   align="right" alt="Logo" width="543" height="313" /></span></a></td>
+        <td width="407"><p class="style27" align="justify">Arts introduce children to cultures from around the world.Can blossom and excel in the arts. Even with physical, emotional or learning challenges,can experience success in the arts.Arts build confidence and community.Because there is not just one right way to make art, every child can feel pride in hisor her original artistic creations.Schools with a variety of differences can celebrate the arts as one community.Unfortunately, when schools cut back on budgets,the arts are usually the first to go.It seems that schools do not appreciate the importance of art in building a kid’s brain.The  creative process provides opportunities to demonstrate multiple approaches to  solving problems. Arts can make a critical difference in people’s lives.</p></td>
+      </tr>
+    </table>
+  </div>
+</div>
+	</div>
+	
+		<!--<div>
+			<div>
+				<span class="style21">Follow us</span>
+				<a href="http://facebook.com/freewebsitetemplates" target="_blank" class="facebook">Facebook</a>
+				<a href="#" class="subscribe">Subscribe</a>
+				<a href="http://twitter.com/fwtemplates" target="_blank" class="twitter">Twitter</a>
+				<a href="http://www.flickr.com/freewebsitetemplates/" target="_blank" class="flicker">Flickr</a>			
+		  
+		</div>
+		
+	  </div>-->
+		<!--<p class="footnote style2" align="center"> &copy; finggu.com. All Rights Reserved.</p>
+		
+		</div>-->
+        
+        
+        
+</span>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+// Captcha Script
+
+function checkform(theform){
+var why = "";
+
+if(theform.CaptchaInput.value == ""){
+why += "- Please Enter CAPTCHA Code.\n";
+}
+if(theform.CaptchaInput.value != ""){
+if(ValidCaptcha(theform.CaptchaInput.value) == false){
+why += "- The CAPTCHA Code Does Not Match.\n";
+}
+}
+if(why != ""){
+alert(why);
+return false;
+}
+}
+
+var a = Math.ceil(Math.random() * 9)+ '';
+var b = Math.ceil(Math.random() * 9)+ '';
+var c = Math.ceil(Math.random() * 9)+ '';
+var d = Math.ceil(Math.random() * 9)+ '';
+var e = Math.ceil(Math.random() * 9)+ '';
+
+var code = a + b + c + d + e;
+document.getElementById("txtCaptcha").value = code;
+document.getElementById("CaptchaDiv").innerHTML = code;
+
+// Validate input against the generated number
+function ValidCaptcha(){
+var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+if (str1 == str2){
+return true;
+}else{
+return false;
+}
+}
+
+// Remove the spaces from the entered and generated code
+function removeSpaces(string){
+return string.split(' ').join('');
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+        
